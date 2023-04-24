@@ -1,7 +1,7 @@
 import unittest
 from fibonacci import fibonacci
 
-class TestFibo(unittest.Testcase):
+class TestFibo(unittest.TestCase):
     def test1(self):
         self.assertEqual(1, fibonacci(1))
         
@@ -19,6 +19,24 @@ class TestFibo(unittest.Testcase):
 
     def test_6(self):
         self.assertEqual(8, fibonacci(6))
+
+    def test_15(self):
+        self.assertEqual(610, fibonacci(15))
+
+    def test_16(self):
+        self.assertEqual(987, fibonacci(16))
+
+    def test_17(self):
+        self.assertEqual(1597, fibonacci(17))
+
+    def test_18(self):
+        self.assertEqual(2584, fibonacci(18))
+
+    def test_19(self):
+        self.assertEqual(4181, fibonacci(19))
+
+    def test_20(self):
+        self.assertEqual(6765, fibonacci(20))
 
 if __name__ == '__main__':
     unittest.main()
